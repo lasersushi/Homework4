@@ -41,8 +41,7 @@ public class Homework4 {
 
     public static boolean CheckInt(String a) {
         boolean ans = false;
-        double Parsed = Double.parseDouble(a);
-        if (Parsed % 1 == 0) {
+        if (a.length() > 1) {
             ans = true;
         }
         return ans;
