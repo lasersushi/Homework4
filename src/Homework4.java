@@ -16,12 +16,11 @@ public class Homework4 {
         double aDouble = Double.parseDouble(a);
         double bDouble = Double.parseDouble(b);
         if (bIsInt && aIsInt) {
-            int aInt = (int)(aDouble);
-            int bInt = (int)(bDouble);
+            int aInt = (int) (aDouble);
+            int bInt = (int) (bDouble);
             computeInt(operation, aInt, bInt);
             doubleOp = false;
-        }
-        else {
+        } else {
             computeDouble(operation, aDouble, bDouble);
         }
     }
