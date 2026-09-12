@@ -11,16 +11,18 @@ public class Homework4 {
 
     public static void calculate(String operation, String a, String b, String oppositeOrder) {
         boolean aIsInt = CheckInt(a);
-        if (aIsInt == true) {
-            int aInt = Integer.parseInt(a);
-        } else {
-            double aDouble = Double.parseDouble(a);
-        }
         boolean bIsInt = CheckInt(b);
-        if (bIsInt == true) {
-            int bInt = Integer.parseInt(b);
-        } else {
-            double bDouble = Double.parseDouble(b);
+        boolean doubleOp = true;
+        double aDouble = Double.parseDouble(a);
+        double bDouble = Double.parseDouble(b);
+        if (bIsInt && aIsInt) {
+            int aInt = (int)(aDouble);
+            int bInt = (int)(bDouble);
+            computeInt(operation, aInt, bInt);
+            doubleOp = false;
+        }
+        else {
+            computeDouble(operation, aDouble, bDouble);
         }
     }
 
