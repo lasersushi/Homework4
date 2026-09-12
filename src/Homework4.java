@@ -33,7 +33,7 @@ public class Homework4 {
         return ans;
     }
 
-    public static int ComputeInt(String op, int a, int b) {
+    public static int computeInt(String op, int a, int b) {
         int ans = 0;
         if (op.equals("add")) {
             ans = a + b;
@@ -49,7 +49,7 @@ public class Homework4 {
         return ans;
     }
 
-    public static double ComputeDouble(String op, double a, double b) {
+    public static double computeDouble(String op, double a, double b) {
         double ans = 0;
         if (op.equals("add")) {
             ans = a + b;
