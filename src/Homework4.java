@@ -41,7 +41,7 @@ public class Homework4 {
 
     public static boolean CheckInt(String a) {
         boolean ans = false;
-        if (a.length() > 1) {
+        if (a.indexOf(".") == -1) {
             ans = true;
         }
         return ans;
