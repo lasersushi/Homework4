@@ -32,4 +32,40 @@ public class Homework4 {
         }
         return ans;
     }
+    public static int ComputeInt(String op, int a, int b) {
+        int ans = 0;
+        if (op.equals("add")) {
+            ans = a + b;
+        }
+        else if (op.equals("subtract")) {
+            ans = a - b;
+        }
+        else if (op.equals("divide")) {
+            ans = a/b;
+        }
+        else if (op.equals("multiply")) {
+            ans = a * b;
+        } else {
+            throw new IllegalArgumentException("Incorrect argument parameters");
+        }
+        return ans;
+    }
+    public static double ComputeDouble(String op, double a, double b) {
+        double ans = 0;
+        if (op.equals("add")) {
+            ans = a + b;
+        }
+        else if (op.equals("subtract")) {
+            ans = a - b;
+        }
+        else if (op.equals("divide")) {
+            ans = a/b;
+        }
+        else if (op.equals("multiply")) {
+            ans = a * b;
+        } else {
+            throw new IllegalArgumentException("Incorrect argument parameters");
+        }
+        return ans;
+    }
 }
