@@ -19,8 +19,8 @@ public class Homework4 {
 
     public static void calculate(String operation, String a, String b, String oppositeOrder) {
         boolean isOp = isOpposite(oppositeOrder);
-        boolean aIsInt = CheckInt(a);
-        boolean bIsInt = CheckInt(b);
+        boolean aIsInt = checkInt(a);
+        boolean bIsInt = checkInt(b);
         boolean doubleOp = true;
         double aDouble = Double.parseDouble(a);
         double bDouble = Double.parseDouble(b);
@@ -41,7 +41,7 @@ public class Homework4 {
         }
     }
 
-    public static boolean CheckInt(String a) {
+    public static boolean checkInt(String a) {
         boolean ans = false;
         if (a.indexOf(".") == -1) { // This method checks if the iputed values are integers
             ans = true;
